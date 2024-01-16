@@ -4,7 +4,7 @@ CSV_FNAME=${SCRIPT_PATH}/url.csv
 CSV_TMP_FNAME=${SCRIPT_PATH}/url.tmp.csv
 CSV_FINAL_FNAME=${SCRIPT_PATH}/url.final.csv
 
-[ -f ${CSV_FNAME} ] || touch ${CSV_FNAME}
+[ -f "${CSV_FNAME}" ] || touch "${CSV_FNAME}"
 
 if [ "X$1" == "Xshow" ] ; then
 cp "${CSV_FNAME}" "${CSV_FINAL_FNAME}"
